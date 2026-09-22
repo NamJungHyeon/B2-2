@@ -57,5 +57,5 @@ Issue 생성 → feature/<이름>-<작업내용> 브랜치 → 커밋·push → 
 ```
 
 - `main`은 항상 제출 가능한 상태로 유지하고 직접 push하지 않습니다.
-- 모든 변경은 PR과 다른 팀원 1명 이상의 승인을 거쳐 병합합니다.
+- 모든 변경은 PR과 다른 팀원 1명 이상의 승인을 거쳐 merge합니다.
 - 자세한 규칙은 [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md)를 따릅니다.
