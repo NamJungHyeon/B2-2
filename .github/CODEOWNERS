@@ -1,0 +1,32 @@
+# CODEOWNERS — 파일/폴더별 책임 리뷰어
+#
+# 여기에 지정된 사람은 해당 경로가 바뀐 PR에 리뷰어로 자동 지정된다.
+# "담당자"가 아니라 "그 파일을 검토할 사람"을 적는다. (본인 PR에는 본인이 리뷰어로 지정되지 않으므로)
+# 리뷰 규칙:
+#   - 남정현이 담당하는 파일 → 강소연(@soy7yos)이 검토
+#   - 유영민이 담당하는 파일 → 남정현(@NamJungHyeon)이 검토
+#   - 강소연이 담당하는 파일 → 유영민(@imyoman99)이 검토
+# 뒤에 오는 규칙이 앞의 규칙보다 우선한다.
+
+# 기본값: 위 규칙에 안 걸리는 모든 파일은 저장소 관리자가 검토
+*                               @NamJungHyeon
+
+# 저장소 설정·양식·협업 규칙 (담당: 남정현)
+/.github/                       @soy7yos
+/docs/CONTRIBUTING.md           @soy7yos
+/README.md                      @soy7yos
+
+# 충돌 해결 기록 (담당: 강소연)
+/docs/conflict-resolution.md    @imyoman99
+
+# 트러블슈팅 기록·제출 인덱스 (담당: 유영민)
+/docs/troubleshooting-log.md    @NamJungHyeon
+/SUBMISSION.md                  @NamJungHyeon
+
+# 증빙 폴더: 누구나 넣을 수 있으므로 세 명 모두 확인
+/docs/evidence/                 @NamJungHyeon @soy7yos @imyoman99
+
+# 팀원 소개: 작성자의 담당 리뷰어가 검토
+/team/junghyun.md               @soy7yos
+/team/soyeon.md                 @imyoman99
+/team/min.md                    @NamJungHyeon

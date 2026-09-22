@@ -30,9 +30,9 @@ B2-2 팀(강소연, 남정현, 유영민)이 이 저장소에서 협업할 때 �
 
 | 팀원 | GitHub | 정리 책임 | Git 실습 기록 담당 | 기본 리뷰 대상 |
 | --- | --- | --- | --- | --- |
-| 남정현 | @NamJungHyeon | 저장소·권한·main 보호 설정, `docs/CONTRIBUTING.md`, `.github/` 템플릿, README 뼈대 | `git commit --amend` | 강소연의 PR |
-| 강소연 | @soy7yos | 충돌 실습 일정, `docs/conflict-resolution.md` | `git reset --soft HEAD~1` | 유영민의 PR |
-| 유영민 | @imyoman99 | `docs/troubleshooting-log.md` 구조, `SUBMISSION.md` 취합 | `git revert` | 남정현의 PR |
+| 남정현 | @NamJungHyeon | 저장소·권한·main 보호 설정, `docs/CONTRIBUTING.md`, `.github/` 템플릿, README 뼈대 | `git commit --amend` | 유영민의 PR |
+| 강소연 | @soy7yos | 충돌 실습 일정, `docs/conflict-resolution.md` | `git reset --soft HEAD~1` | 남정현의 PR |
+| 유영민 | @imyoman99 | `docs/troubleshooting-log.md` 구조, `SUBMISSION.md` 취합 | `git revert` | 강소연의 PR |
 
 - `git stash` / `git stash pop`은 세 명이 함께 실습하고 각자의 역할을 기록한다.
 - 문서 담당자는 취합과 누락 확인을 책임지며, 다른 팀원의 참여를 대신하지 않는다.
@@ -172,7 +172,7 @@ GitHub의 자동 병합 메시지(`Merge pull request #N ...`)와 `git revert`�
   - **변경 이유 (Why)**: 왜 필요한지, 이슈의 어떤 완료 조건을 해결하는지
   - **검증 방법과 결과 (How)**: 실제로 확인한 방법과 결과
   - **확인 사항**: 체크리스트. 해당 없는 항목은 지우지 말고 체크 후 이유를 적는다.
-- Reviewers에 순환 규칙에 따른 팀원을 지정한다. 부재 시 나머지 팀원이 대신한다.
+- Reviewers는 `.github/CODEOWNERS`에 따라 자동으로 지정된다. 지정되지 않은 경로면 순환 규칙에 따라 직접 지정한다. 부재 시 나머지 팀원이 대신한다.
 - PR 사이드바 **Development**에 이슈가 연결됐는지 확인한다.
 
 병합 조건:
@@ -210,7 +210,15 @@ GitHub의 자동 병합 메시지(`Merge pull request #N ...`)와 `git revert`�
 
 ### 순환 리뷰
 
-기본 순환은 **남정현 → 강소연 → 유영민 → 남정현** (화살표 방향이 "누구의 PR을 리뷰하는가")이다.
+기본 순환은 **남정현 → 유영민 → 강소연 → 남정현** (화살표 방향이 "누구의 PR을 리뷰하는가")이다.
+
+| 작성자 | 리뷰어 |
+| --- | --- |
+| 남정현 | 강소연 |
+| 유영민 | 남정현 |
+| 강소연 | 유영민 |
+
+이 규칙은 `.github/CODEOWNERS`에 파일별로 반영되어 있어, 해당 파일이 바뀐 PR에는 리뷰어가 자동으로 지정된다.
 두 번째 PR에도 같은 순환을 적용하면 각자 다른 사람의 PR 2개를 리뷰하게 된다. 최종 개인별 횟수는 `SUBMISSION.md`에서 확인한다.
 
 ## 9. 작업 순서 (명령 예시)
