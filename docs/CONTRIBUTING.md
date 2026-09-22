@@ -148,10 +148,7 @@ GitHub의 자동 병합 메시지(`Merge pull request #N ...`)와 `git revert`�
 
 **모든 작업은 Issue를 먼저 만든다. 충돌·트러블슈팅 실습도 Issue로 등록한다.**
 
-- Issue는 `.github/ISSUE_TEMPLATE/`의 양식을 사용한다.
-  - `작업 (문서·설정)`: 소개 문서, 협업 문서, 저장소 설정
-  - `충돌 실습`: 충돌 재현과 해결
-  - `Git 트러블슈팅 실습`: amend / reset / revert / stash
+- Issue는 `.github/ISSUE_TEMPLATE/task.md` 양식 하나를 공통으로 사용한다. 충돌·트러블슈팅 실습도 같은 양식으로 만들고, 실습별 기록 항목은 `docs/conflict-resolution.md`, `docs/troubleshooting-log.md`의 형식을 따른다. (실습용 Issue 양식을 따로 두면 기록 문서와 내용이 중복되거나 어긋날 수 있어 두지 않는다.)
 - 제목 접두어:
 
 | 접두어 | 용도 |
