@@ -96,7 +96,7 @@ feature/<이름>-<작업내용>
 | 소개 문서 | `feature/Nam-profile`, `feature/sy-profile`, `feature/Min-profile` |
 | 협업 문서·양식 | `feature/Nam-github-templates`, `feature/Nam-contributing` |
 | 충돌 실습 | `feature/sy-conflict-1`, `feature/Nam-conflict-1` |
-| 트러블슈팅 실습 | `feature/Min-troubleshoot-revert` |
+| 트러블슈팅 실습 | `feature/Min-troubleshoot` |
 | 긴급 수정 | `feature/Nam-hotfix-readme-link` |
 
 ## 5. 커밋 메시지 컨벤션
