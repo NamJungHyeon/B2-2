@@ -1,7 +1,7 @@
 # B2-2 github-workflow-practice
 
-GitHub Flow 기반 협업 워크플로우를 연습하는 팀 저장소입니다.
-이 저장소는 Issue와 Pull Request를 활용한 Git 협업 실습 과정을 기록합니다.
+B2-2 팀이 GitHub Flow 기반 협업 워크플로우를 익히기 위해 만든 저장소입니다.
+브랜치 전략, PR 리뷰, 충돌 해결, 트러블슈팅 과정을 팀원별로 정리합니다.
 
 ## 팀원 소개
 
