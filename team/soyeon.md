@@ -20,7 +20,7 @@
 * 🎵 좋아하는 음악: NewJeans - Supernatural
 * 🎬 좋아하는 영화/드라마: Everything Everywhere All at Once
 * 🍕 좋아하는 음식: 김치찌개
-* ☕ 최애 음료: 라떼
+* ☕ 최애 음료: 아인슈페너 라떼
 * 🐶 좋아하는 동물: 수달
 * 🌈 좋아하는 색: 하얀색
 
