@@ -1,7 +1,7 @@
 # B2-2 github-workflow-practice
 
-GitHub Flow 기반 협업 워크플로우를 연습하는 팀 저장소입니다.
-이 저장소는 Issue와 Pull Request를 활용한 Git 협업 실습 과정을 기록합니다.
+강소연, 남정현, 유영민 세 명이 GitHub Flow로 협업하는 연습 저장소입니다.
+Issue, PR, 코드 리뷰, 충돌 해결, Git 복구 실습의 전 과정을 기록으로 남깁니다.
 
 ## 팀원 소개
 
