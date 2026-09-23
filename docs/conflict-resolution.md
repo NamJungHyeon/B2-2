@@ -358,7 +358,7 @@ PR #27 작업 중 실수로 함께 커밋된 것으로 드러나, 다음날 유�
 
 ### 10. 실패한 1차 시도와 원인
 
-충돌 실습 2도 **두 번째 시도**다. 1차 시도([PR #23](https://github.com/NamJungHyeon/B2-2/pull/23),
+충돌 실습 2도 **두 번째 시도**이다. 1차 시도([PR #23](https://github.com/NamJungHyeon/B2-2/pull/23),
 [PR #24](https://github.com/NamJungHyeon/B2-2/pull/24))에서는 충돌이 발생하지 않았다.
 
 원인은 **"이동"을 실제로 하지 않았기 때문**이다. PR #23의 커밋 `363a62b`는
