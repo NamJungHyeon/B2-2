@@ -1,4 +1,4 @@
-# 🛠️ Git Troubleshooting Log
+# Git Troubleshooting Log
 
 > 팀 협업 과정에서 수행한 Git 트러블슈팅 실습의 상황, 해결 과정, 결과를 기록한다.
 > 모든 기록은 다른 팀원이 동일한 상황에서 재현할 수 있도록 작성한다.
