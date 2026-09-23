@@ -361,12 +361,12 @@
 
 | 증빙                         | 경로                                   | 상태   |
 | ---------------------------- | -------------------------------------- | ------ |
-| Git 히스토리 텍스트          | `docs/evidence/git-log.txt`            | 이 PR 병합 후 생성 |
+| Git 히스토리 텍스트          | [`docs/evidence/git-log.txt`](docs/evidence/git-log.txt) | 저장 완료 (PR #44) |
 | main 보호 설정 화면          | `docs/evidence/branch-protection.png`  | 미작성 |
 | 충돌 마커 캡처               | `docs/evidence/conflict-1-markers.png` | 미작성 |
 | modify/delete 충돌 상태 캡처 | `docs/evidence/conflict-2-status.png`  | 미작성 |
 
-Git 히스토리는 최종 PR 병합 후 아래 명령으로 생성한다.
+Git 히스토리는 아래 명령으로 생성했다. 이 PR 이후 커밋이 추가되면 같은 명령으로 갱신한다.
 
 ```
 git switch main
@@ -391,7 +391,7 @@ git log --oneline --graph --all > docs/evidence/git-log.txt
 - [x] PR #36 병합 (보너스 과제 1)
 - [x] PR #38 병합 — `docs/youngmin.md` 사본 정리
 - [x] `SUBMISSION.md`를 저장소 루트로 이동 (README 19행 링크 복구)
-- [ ] `docs/evidence/git-log.txt` 저장 — 이 PR 병합 후 생성
+- [x] `docs/evidence/git-log.txt` 저장 (PR #44)
 - [ ] main 보호 설정 화면 캡처 저장
 - [ ] 충돌 마커 캡처 2종 저장
 - [ ] 모든 링크가 `main`에서 정상적으로 열림
@@ -401,16 +401,8 @@ git log --oneline --graph --all > docs/evidence/git-log.txt
 
 ## 남은 작업
 
-1. **남정현**: 이 PR 병합 후 `docs/evidence/` 생성하고 Git 히스토리 저장
-
-   ```
-   git switch main
-   git pull --ff-only origin main
-   mkdir -p docs/evidence
-   git log --oneline --graph --all > docs/evidence/git-log.txt
-   ```
-
-2. **남정현**: main 브랜치 보호 설정 화면 캡처 (Settings → Branches)
-3. **강소연**: 충돌 #1 마커 화면 캡처 — `docs/conflict-resolution.md` 4절 재현
-4. **강소연**: 충돌 #2 `modify/delete` 상태 캡처 — `git status --short`의 `UD`, `git ls-files -u` 출력
-5. 전원: `main` 기준으로 README와 이 문서의 모든 링크가 열리는지 최종 확인
+1. **남정현**: main 브랜치 보호 설정 화면 캡처 (Settings → Branches) → `docs/evidence/branch-protection.png`
+2. **강소연**: 충돌 #1 마커 화면 캡처 — `docs/conflict-resolution.md` 4절 재현 → `docs/evidence/conflict-1-markers.png`
+3. **강소연**: 충돌 #2 `modify/delete` 상태 캡처 — `git status --short`의 `UD`, `git ls-files -u` 출력 → `docs/evidence/conflict-2-status.png`
+4. 전원: `main` 기준으로 README와 이 문서의 모든 링크가 열리는지 최종 확인
+5. **남정현**: 마지막 PR 병합 후 `docs/evidence/git-log.txt` 한 번 더 갱신

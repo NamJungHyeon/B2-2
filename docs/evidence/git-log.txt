@@ -1,0 +1,121 @@
+# B2-2 Git 히스토리 증빙
+#
+# 생성 명령: git log --oneline --graph --all
+# 생성 일시: 2026-09-23 17:29
+# 생성 시점 main: c0d8123 Merge pull request #42 from NamJungHyeon/feature/Nam-submission-index
+# 저장소: https://github.com/NamJungHyeon/B2-2
+#
+# 모든 병합은 Create a merge commit 방식이므로 각 PR의 브랜치 분기와 합류가
+# 그래프에 그대로 드러난다. main에 직접 push한 커밋은 초기 2개(a030e65, 3980e9d)뿐이고,
+# 그 이후 모든 변경은 PR을 통해 병합됐다.
+
+*   c0d8123 Merge pull request #42 from NamJungHyeon/feature/Nam-submission-index
+|\  
+| * bff632f docs: SUBMISSION.md를 저장소 루트로 이동하고 최신 상태로 갱신
+|/  
+*   f7889d7 Merge pull request #38 from NamJungHyeon/feature/Nam-remove-duplicate-profile
+|\  
+| * 0ee6d14 fix: 충돌 실습 2의 부산물인 docs/youngmin.md 사본 삭제
+* |   6d20a8c Merge pull request #40 from NamJungHyeon/feature/Min-submission
+|\ \  
+| |/  
+|/|   
+| * 18abf95 docs: 제출물 인덱스 문서 추가
+* |   338bb02 Merge pull request #36 from NamJungHyeon/feature/Nam-rebase-practice
+|\ \  
+| * | 8adc050 docs: README 관련 문서와 폴더 구조에 rebase 실습 기록 추가
+| * | e1e2fc3 docs: interactive rebase squash·reword 실습 기록 추가
+| * | 5e70748 docs: 문자열 유틸 사용 예시를 모듈 docstring에 추가
+| * | 17de07f feat: 문자열 유틸 함수 reverse, count_words 추가
+|/ /  
+* |   c52b4f1 Merge pull request #34 from NamJungHyeon/feature/sy-conflict-resolution-doc
+|\ \  
+| * | dc99485 docs: 충돌 해결 기록 수정
+| * | 126b851 docs: 충돌 해결 기록 작성
+|/ /  
+* |   77b1089 Merge pull request #32 from NamJungHyeon/feature/Min-troubleshooting-log
+|\ \  
+| * | 84ff3be docs: 리뷰 반영 - 제목에 이모지 제거
+| * | c991ca9 docs: 트러블슈팅 로그 문서 추가
+| |/  
+* |   34440bc Merge pull request #12 from NamJungHyeon/feature/sy-fix-contributing-branch-example
+|\ \  
+| * | 5cfcaa0 docs: 트러블슈팅 실습 브랜치 예시에서 -revert 제거
+* | |   9e753cb Merge pull request #22 from NamJungHyeon/feature/Nam-codeowners
+|\ \ \  
+| |_|/  
+|/| |   
+| * | 13f8ed6 chore: CODEOWNERS로 파일별 책임 리뷰어 지정 및 순환 리뷰 규칙 정정
+* | |   d86683d Merge pull request #30 from NamJungHyeon/feature/Min-conflict-2-retry
+|\ \ \  
+| * | | c287b92 fix: 잘못 추가된 문서 파일 제거
+* | | |   4e7dda6 Merge pull request #28 from NamJungHyeon/feature/sy-conflict-2-retry
+|\ \ \ \  
+| * \ \ \   646730a docs: main 병합 충돌 해결 - team/min.md 유지 및 내용 반영
+| |\ \ \ \  
+| |/ / / /  
+|/| | | |   
+* | | | |   5ce9c85 Merge pull request #27 from NamJungHyeon/feature/Min-conflict-2-retry
+|\ \ \ \ \  
+| | |/ / /  
+| |/| | |   
+| * | | | 50c6c9d docs: team/min.md 삭제
+|/ / / /  
+| * / / f97554a docs: team/min.md 내용 수정
+|/ / /  
+* | |   730d2c8 Merge pull request #24 from NamJungHyeon/feature/sy-conflict-2
+|\ \ \  
+| * | | bbb5f01 docs: team/min.md 내용 수정
+| |/ /  
+* | |   1af7044 Merge pull request #23 from NamJungHyeon/feature/Min-conflict-2
+|\ \ \  
+| |/ /  
+|/| |   
+| * | 363a62b docs: team/youngmin.md를 docs/로 이동
+|/ /  
+* |   8885aca Merge pull request #18 from NamJungHyeon/feature/sy-conflict-1-retry
+|\ \  
+| * \   9c66e85 Merge branch 'main' into feature/sy-conflict-1-retry
+| |\ \  
+| |/ /  
+|/| |   
+* | |   8b58cf2 Merge pull request #16 from NamJungHyeon/feature/Nam-conflict-1-retry
+|\ \ \  
+| * | | 932f550 docs: README 소개 문장을 팀원 이름과 실습 항목 중심으로 수정
+|/ / /  
+| * / 7e28eb1 docs: main 병합 충돌 해결 - README 소개 문장 통합
+|/ /  
+* |   2e1deec Merge pull request #14 from NamJungHyeon/feature/sy-conflict-1
+|\ \  
+| * | fd99451 docs: README에 팀원 소개 링크, 관련 문서 목차, 폴더 구조, 작업 흐름 추가
+|/ /  
+* |   c7c6599 Merge pull request #10 from NamJungHyeon/feature/Nam-conflict-1
+|\ \  
+| |/  
+|/|   
+| * c788b02 docs: README에 팀원 소개 링크, 관련 문서 목차, 폴더 구조, 작업 흐름 추가
+|/  
+*   0808a22 Merge pull request #8 from NamJungHyeon/feature/Nam-github-templates
+|\  
+| * a5d3e3b chore: 리뷰 반영 - 충돌·트러블슈팅 실습용 Issue 템플릿 삭제
+| * d2686a7 chore: 협업 규칙 문서 작성 및 PR·Issue 템플릿 추가
+|/  
+*   a524b03 Merge pull request #6 from NamJungHyeon/feature/Min-profile
+|\  
+| * 6886022 docs: 유영민 팀원 소개 문서 수정2
+| * 72fc1d3 docs: 유영민 팀원 소개 문서 수정
+| * 1f50e4b docs: 유영민 팀원 소개 문서 추가
+* |   04c2a28 Merge pull request #5 from NamJungHyeon/feature/sy-profile
+|\ \  
+| * | 3235718 docs: 강소연 팀원 소개 문서 수정
+| * | de3c7fc docs: 강소연 팀원 소개 문서 추가
+| |/  
+* |   69d5b54 Merge pull request #4 from NamJungHyeon/feature/Nam-profile
+|\ \  
+| |/  
+|/|   
+| * d06883b docs: 리뷰 반영 - 소개 문서에 이번 미션 역할과 학습 목표 추가
+| * 6cd2300 docs: 남정현 팀원 소개 문서 추가
+|/  
+* 3980e9d Add initial project folder structure
+* a030e65 Initial commit
