@@ -338,7 +338,7 @@ git push origin feature/sy-conflict-2-retry
 - 최종 병합 커밋: [`4e7dda6`](https://github.com/NamJungHyeon/B2-2/commit/4e7dda6)
 - 결과: `team/min.md`가 강소연의 수정 내용을 담은 채 유지됐다.
 
-### 9. 남은 문제 (후속 조치 필요)
+### 9. 남은 문제와 후속 조치
 
 이번 해결로 `team/min.md`와 `docs/youngmin.md`에 유영민의 소개가 **두 벌** 남았고,
 두 파일의 내용이 서로 다르다(`docs/youngmin.md`에는 강소연의 수정이 반영되지 않음).
@@ -349,6 +349,16 @@ git push origin feature/sy-conflict-2-retry
 후속 PR에서 `docs/youngmin.md`를 삭제해 정리해야 한다.
 `docs/`는 협업 규칙과 실습 기록을 두는 폴더이고 팀원 소개는 `team/` 담당이므로,
 사본 쪽을 지우는 것이 저장소 구조에 맞다.
+
+**조치 완료:** PR #38에서 `docs/youngmin.md`를 삭제했다. 두 파일의 차이는 다음과 같았고,
+정본인 `team/min.md` 쪽에만 이후 수정이 반영되어 있었다.
+
+| 항목 | `docs/youngmin.md` (사본) | `team/min.md` (정본) |
+| --- | --- | --- |
+| 혈액형 | `AB형` | `AB` |
+| 좋아하는 음악 | `국내힙합` | `국내 힙합` |
+| 좋아하는 영화/드라마 | `브레이킹배드(Breaking bad)` | `Breaking Bad` |
+| 한마디 | `미션 화이팅입니다!!! 👋` | `**"미션 화이팅입니다!!!"** 👋` |
 
 별개로, 같은 병합(PR #28)에 딸려 온 `docs/SUBMISSION.md`·`docs/troubleshooting-log.md`(미완성 템플릿)는
 PR #27 작업 중 실수로 함께 커밋된 것으로 드러나, 다음날 유영민이 PR #30
