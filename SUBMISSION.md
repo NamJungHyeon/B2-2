@@ -17,9 +17,9 @@
 
 | 기준                          | 남정현      | 강소연                | 유영민              |
 | ----------------------------- | ----------- | --------------------- | ------------------- |
-| 병합된 본인 PR 2개 이상       | 5개         | 7개                   | 5개                 |
+| 병합된 본인 PR 2개 이상       | 7개         | 7개                   | 5개                 |
 | 타인 PR 실질 리뷰 2개 이상    | 2개         | 2개                   | 3개                 |
-| 본인 PR 리뷰 반영 1회 이상    | 2회         | 1회 (**답글 미작성**) | 2회                 |
+| 본인 PR 리뷰 반영 1회 이상    | 2회         | 2회                   | 2회                 |
 | 소개 파일 기여 커밋 1개 이상  | 2개         | 2개                   | 3개                 |
 | 트러블슈팅 기록 참여 1개 이상 | 1개 (stash) | 1개 (amend)           | 2개 (reset, revert) |
 
@@ -36,7 +36,8 @@
 | [#9](https://github.com/NamJungHyeon/B2-2/issues/9)   | [Conflict] 충돌 실습 1: README 작성 및 동일 영역 충돌 재현 | Closed (PR #10) |
 | [#15](https://github.com/NamJungHyeon/B2-2/issues/15) | [Conflict] 충돌 실습 1 재시도 (선병합)                     | Closed (PR #16) |
 | [#21](https://github.com/NamJungHyeon/B2-2/issues/21) | [Chore] CODEOWNERS로 파일별 책임 리뷰어 지정               | Closed (PR #22) |
-| [#35](https://github.com/NamJungHyeon/B2-2/issues/35) | [Chore] 보너스 과제 1: interactive rebase 히스토리 정리    | Open (PR #36)   |
+| [#35](https://github.com/NamJungHyeon/B2-2/issues/35) | [Chore] 보너스 과제 1: interactive rebase 히스토리 정리    | Closed (PR #36) |
+| [#37](https://github.com/NamJungHyeon/B2-2/issues/37) | [Fix] 충돌 실습 2의 부산물인 docs/youngmin.md 사본 삭제     | Closed (PR #38) |
 
 ### Pull Requests
 
@@ -64,11 +65,16 @@
 - 커밋: `13f8ed6` · 리뷰: 강소연 Approve
 - **보너스 과제 2 (리뷰어 자동화)**
 
-**[PR #36](https://github.com/NamJungHyeon/B2-2/pull/36) — docs: interactive rebase squash·reword 실습 기록 추가** · Open · Closes #35
+**[PR #36](https://github.com/NamJungHyeon/B2-2/pull/36) — docs: interactive rebase squash·reword 실습 기록 추가** · Merged `338bb02` · Closes #35
 - 변경: `docs/rebase-practice.md` 신규(239줄), `src/string_utils.py` 신규, `README.md` 링크 추가 (+263/-2)
 - 커밋: `17de07f`(squash 결과) → `5e70748`(reword 결과) → `e1e2fc3` 문서 → `8adc050` README
-- 리뷰어: 강소연
+- 리뷰: 강소연 Approve
 - **보너스 과제 1 (히스토리 정리)**
+
+**[PR #38](https://github.com/NamJungHyeon/B2-2/pull/38) — fix: 충돌 실습 2의 부산물인 docs/youngmin.md 사본 삭제** · Merged `f7889d7` · Closes #37
+- 변경: `docs/youngmin.md` 삭제(-45), `docs/conflict-resolution.md` 9절에 조치 완료 기록 추가 (+11/-1)
+- 커밋: `0ee6d14`
+- 리뷰: 유영민 Approve. CODEOWNERS가 `docs/conflict-resolution.md`의 owner인 유영민을 자동 지정함 (보너스 과제 2 동작 확인)
 
 ### Code Reviews
 
@@ -164,7 +170,7 @@
 
 | PR                                                  | 받은 리뷰                                                                             | 반영 커밋                              | 답글                             |
 | --------------------------------------------------- | ------------------------------------------------------------------------------------- | -------------------------------------- | -------------------------------- |
-| [#5](https://github.com/NamJungHyeon/B2-2/pull/5)   | `[P2]` `라떼`가 모호하니 `카페 라떼`, `바닐라 라떼`처럼 구체적인 메뉴명 제안 (유영민) | `3235718` (`라떼` → `아인슈페너 라떼`) | **없음 — 보완 필요**             |
+| [#5](https://github.com/NamJungHyeon/B2-2/pull/5)   | `[P2]` `라떼`가 모호하니 `카페 라떼`, `바닐라 라떼`처럼 구체적인 메뉴명 제안 (유영민) | `3235718` (`라떼` → `아인슈페너 라떼`) | "라떼에서 아인슈페너 라떼로 구체화하였습니다. 확인 부탁드립니다." |
 | [#34](https://github.com/NamJungHyeon/B2-2/pull/34) | `[P2]` 어조 통일을 위해 `두 번째 시도다` → `두 번째 시도이다` (유영민)                | 반영 완료                              | "수정했습니다." (커밋 링크 없음) |
 
 ### 결과물 기여 커밋
@@ -314,7 +320,7 @@
 
 | 보너스                           | 담당   | 상태                                                                                                                                                     |
 | -------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1. `git rebase -i` 히스토리 정리 | 남정현 | [PR #36](https://github.com/NamJungHyeon/B2-2/pull/36) — 진행 중. `docs/rebase-practice.md`에 squash(4→1) / reword 전후 히스토리, reflog, 안전 수칙 기록 |
+| 1. `git rebase -i` 히스토리 정리 | 남정현 | [PR #36](https://github.com/NamJungHyeon/B2-2/pull/36) — 완료 (`338bb02`). `docs/rebase-practice.md`에 squash(4→1) / reword 전후 히스토리, reflog, 안전 수칙 기록 |
 | 2. CODEOWNERS / 리뷰어 자동화    | 남정현 | [PR #22](https://github.com/NamJungHyeon/B2-2/pull/22) — 완료. `.github/CODEOWNERS`로 파일별 책임 리뷰어 지정                                            |
 
 ---
@@ -355,7 +361,7 @@
 
 | 증빙                         | 경로                                   | 상태   |
 | ---------------------------- | -------------------------------------- | ------ |
-| Git 히스토리 텍스트          | `docs/evidence/git-log.txt`            | 미작성 |
+| Git 히스토리 텍스트          | `docs/evidence/git-log.txt`            | 이 PR 병합 후 생성 |
 | main 보호 설정 화면          | `docs/evidence/branch-protection.png`  | 미작성 |
 | 충돌 마커 캡처               | `docs/evidence/conflict-1-markers.png` | 미작성 |
 | modify/delete 충돌 상태 캡처 | `docs/evidence/conflict-2-status.png`  | 미작성 |
@@ -374,17 +380,37 @@ git log --oneline --graph --all > docs/evidence/git-log.txt
 - [x] 팀원 3명이 협업 권한으로 하나의 저장소에 참여
 - [x] `main` 브랜치 보호 설정 완료, 직접 push 없이 PR로만 병합
 - [x] 모든 작업 PR이 Issue와 `Closes #번호`로 연동
-- [x] 팀원별 병합된 PR 2개 이상 (남정현 5 · 강소연 7 · 유영민 5)
+- [x] 팀원별 병합된 PR 2개 이상 (남정현 7 · 강소연 7 · 유영민 5)
 - [x] 팀원별 타인 PR 실질 리뷰 2개 이상 (남정현 2 · 강소연 2 · 유영민 3)
 - [x] 충돌 해결 기록 2회 이상, 그중 비자명 충돌 2회 (같은 hunk 1회, modify/delete 1회)
 - [x] `amend` · `reset --soft` · `revert` · `stash/pop` 4종 실습 완료, 팀원 전원 참여
 - [x] 협업 문서 3종 작성 완료
 - [x] `team/`에 소개 파일 3개, 각자 기여 커밋과 README 링크 존재
 - [x] 보너스 과제 2종 수행 (rebase 히스토리 정리, CODEOWNERS)
-- [x] **강소연 PR #5 리뷰 반영 답글** — 반영 커밋 `3235718`은 있으나 답글 없음
-- [x] PR #36 병합
-- [x] `SUBMISSION.md`를 저장소 루트에 추가 (현재 README 링크가 깨진 상태)
-- [x] `docs/youngmin.md` 정리
+- [x] 강소연 PR #5 리뷰 반영 답글 작성 완료
+- [x] PR #36 병합 (보너스 과제 1)
+- [x] PR #38 병합 — `docs/youngmin.md` 사본 정리
+- [x] `SUBMISSION.md`를 저장소 루트로 이동 (README 19행 링크 복구)
+- [ ] `docs/evidence/git-log.txt` 저장 — 이 PR 병합 후 생성
+- [ ] main 보호 설정 화면 캡처 저장
+- [ ] 충돌 마커 캡처 2종 저장
+- [ ] 모든 링크가 `main`에서 정상적으로 열림
 
 
 
+
+## 남은 작업
+
+1. **남정현**: 이 PR 병합 후 `docs/evidence/` 생성하고 Git 히스토리 저장
+
+   ```
+   git switch main
+   git pull --ff-only origin main
+   mkdir -p docs/evidence
+   git log --oneline --graph --all > docs/evidence/git-log.txt
+   ```
+
+2. **남정현**: main 브랜치 보호 설정 화면 캡처 (Settings → Branches)
+3. **강소연**: 충돌 #1 마커 화면 캡처 — `docs/conflict-resolution.md` 4절 재현
+4. **강소연**: 충돌 #2 `modify/delete` 상태 캡처 — `git status --short`의 `UD`, `git ls-files -u` 출력
+5. 전원: `main` 기준으로 README와 이 문서의 모든 링크가 열리는지 최종 확인
