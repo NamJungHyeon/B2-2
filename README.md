@@ -16,6 +16,7 @@ Issue, PR, 코드 리뷰, 충돌 해결, Git 복구 실습의 전 과정을 기�
 - [기여 가이드](docs/CONTRIBUTING.md)
 - [충돌 해결 기록](docs/conflict-resolution.md)
 - [Git 문제 해결 기록](docs/troubleshooting-log.md)
+- [interactive rebase 실습](docs/rebase-practice.md)
 - [제출물 인덱스](SUBMISSION.md)
 
 ## 폴더 구조
@@ -33,12 +34,14 @@ B2-2/
 │   ├── CONTRIBUTING.md            # 브랜치·커밋·Issue·PR·리뷰 규칙, 충돌 대응 흐름
 │   ├── conflict-resolution.md     # 충돌 해결 기록 (2회 이상, 비자명 충돌 포함)
 │   ├── troubleshooting-log.md     # amend / reset / revert / stash 실습 기록
+│   ├── rebase-practice.md         # interactive rebase squash·reword 실습 기록 (보너스)
 │   └── evidence/                  # git log 그래프, main 보호 설정 화면 등 증빙
 ├── team/
 │   ├── soyeon.md                  # 강소연 소개
 │   ├── junghyun.md                # 남정현 소개
 │   └── min.md                     # 유영민 소개
-└── src/                           # 예시 코드 (선택)
+└── src/
+    └── string_utils.py            # 문자열 유틸 (rebase 실습 대상)
 ```
 
 | 경로 | 내용 |
@@ -46,7 +49,8 @@ B2-2/
 | `team/` | 팀원별 소개 문서. 각자 자신의 PR로 작성한다. |
 | `docs/` | 협업 규칙과 실습 기록. 충돌·트러블슈팅 실습의 결과는 여기에 남긴다. |
 | `docs/evidence/` | `git log --oneline --graph --all` 결과, 브랜치 보호 설정 캡처 등 제출 증빙. |
-| `.github/` | Issue·PR 템플릿. 새 Issue / PR 화면에서 자동으로 적용된다. |
+| `.github/` | Issue·PR 템플릿과 CODEOWNERS. 새 Issue / PR 화면에서 자동으로 적용된다. |
+| `src/` | 예시 코드. `string_utils.py`는 rebase 실습 대상으로 작성했다. |
 | `SUBMISSION.md` | 팀원별로 "내가 만든 Issue / PR / 리뷰 / 리뷰 반영"을 한눈에 볼 수 있는 제출 목차. |
 
 ## 작업 흐름
